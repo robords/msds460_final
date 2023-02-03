@@ -1,0 +1,51 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  OBJ = 32540 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Carco_can_rent_up_to_98_Type_1_machines
+                    NU      98.00000        .               -Inf       96.40000    -350.00000   31980.00000 Marketing_considerations_dictate_that_at_least_26_trucks_be_produced
+                                         350.00000      98.00000       98.40000          +Inf   32680.00000 The_company_has_260_tons_of_steel_available
+
+     2 Carco_now_has_73_Type_2_machines
+                    BS      72.12000        .88000          -Inf       71.00000    -500.00000   -3520.00000 Carco_can_rent_up_to_98_Type_1_machines
+                                            .           73.00000       72.20000     500.00000   68600.00000 Marketing_considerations_dictate_that_at_least_88_cars_be_produced
+
+     3 Cars_and_trucks_take_up_type_1_machine_time
+                    NU        .             .               -Inf       -1.60000    -400.00000   31900.00000 Marketing_considerations_dictate_that_at_least_26_trucks_be_produced
+                                         400.00000        .              .40000          +Inf   32700.00000 The_company_has_260_tons_of_steel_available
+
+     4 Marketing_considerations_dictate_that_at_least_26_trucks_be_produced
+                    BS      27.60000      -1.60000      26.00000       10.00000     -25.00000   31850.00000 Marketing_considerations_dictate_that_at_least_88_cars_be_produced
+                                            .               +Inf       27.60000          +Inf          +Inf
+
+     5 Marketing_considerations_dictate_that_at_least_88_cars_be_produced
+                    NL      88.00000        .           88.00000       85.00000          -Inf   32600.00000 The_company_has_260_tons_of_steel_available
+                                         -20.00000          +Inf       90.00000      20.00000   32500.00000 Marketing_considerations_dictate_that_at_least_26_trucks_be_produced
+
+     6 The_company_has_260_tons_of_steel_available
+                    BS     258.80000       1.20000          -Inf      258.00000     -50.00000   19600.00000 Marketing_considerations_dictate_that_at_least_88_cars_be_produced
+                                            .          260.00000      258.80000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  OBJ = 32540 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 cars         BS      88.00000     300.00000        .            88.00000          -Inf          -Inf
+                                            .               +Inf       90.00000     320.00000   34300.00000 Marketing_considerations_dictate_that_at_least_88_cars_be_produced
+
+     2 trucks       BS      27.60000     400.00000        .            26.00000     375.00000   31850.00000 Marketing_considerations_dictate_that_at_least_88_cars_be_produced
+                                            .               +Inf       27.60000          +Inf          +Inf
+
+     3 type_1_machines
+                    BS      98.00000     -50.00000        .            96.40000    -400.00000   -1760.00000 Carco_can_rent_up_to_98_Type_1_machines
+                                            .               +Inf       98.00000          +Inf          +Inf
+
+End of report
