@@ -5,3 +5,4 @@ seaborn==0.*
 pylint==2.*
 pulp
 GLPK
+scipy
