@@ -4,35 +4,48 @@ Maximize_Profits: - 180 _flugels_advertising_investment_p1
  - 180 _flugels_advertising_investment_p2
  - 180 _flugels_advertising_investment_p3
  - 180 _flugels_advertising_investment_p4
- + 2958.9 _flugels_contracted_demand_in_p1
- + 2958.9 _flugels_contracted_demand_in_p2
- + 2958.9 _flugels_contracted_demand_in_p3
- + 2958.9 _flugels_contracted_demand_in_p4
- + 2958.9 _flugels_contracted_demand_in_p5
- + 2958.9 _flugels_demand_from_ads_p2 + 2958.9 _flugels_demand_from_ads_p3
- + 2958.9 _flugels_demand_from_ads_p4 + 2958.9 _flugels_demand_from_ads_p5
- - 120 _gadgets_advertising_investment_p1
+ + 2970 _flugels_contracted_demand_in_p1
+ + 2970 _flugels_contracted_demand_in_p2
+ + 2970 _flugels_contracted_demand_in_p3
+ + 2970 _flugels_contracted_demand_in_p4
+ + 2970 _flugels_contracted_demand_in_p5 + 2970 _flugels_demand_from_ads_p2
+ + 2970 _flugels_demand_from_ads_p3 + 2970 _flugels_demand_from_ads_p4
+ + 2970 _flugels_demand_from_ads_p5 - 120 _gadgets_advertising_investment_p1
  - 120 _gadgets_advertising_investment_p2
  - 120 _gadgets_advertising_investment_p3
  - 120 _gadgets_advertising_investment_p4
- + 1982.9 _gadgets_contracted_demand_in_p1
- + 1982.9 _gadgets_contracted_demand_in_p2
- + 1982.9 _gadgets_contracted_demand_in_p3
- + 1982.9 _gadgets_contracted_demand_in_p4
- + 1982.9 _gadgets_contracted_demand_in_p5
- + 1982.9 _gadgets_demand_from_ads_p2 + 1982.9 _gadgets_demand_from_ads_p3
- + 1982.9 _gadgets_demand_from_ads_p4 + 1982.9 _gadgets_demand_from_ads_p5
+ + 1990 _gadgets_contracted_demand_in_p1
+ + 1990 _gadgets_contracted_demand_in_p2
+ + 1990 _gadgets_contracted_demand_in_p3
+ + 1990 _gadgets_contracted_demand_in_p4
+ + 1990 _gadgets_contracted_demand_in_p5 + 1990 _gadgets_demand_from_ads_p2
+ + 1990 _gadgets_demand_from_ads_p3 + 1990 _gadgets_demand_from_ads_p4
+ + 1990 _gadgets_demand_from_ads_p5 - 11 _labor_for_plant_a_in_p1
+ - 11 _labor_for_plant_a_in_p2 - 11.55 _labor_for_plant_a_in_p3
+ - 11.55 _labor_for_plant_a_in_p4 - 11.55 _labor_for_plant_a_in_p5
+ - 11 _labor_for_plant_b_in_p1 - 11 _labor_for_plant_b_in_p2
+ - 12.1 _labor_for_plant_b_in_p3 - 12.1 _labor_for_plant_b_in_p4
+ - 12.1 _labor_for_plant_b_in_p5 - 16.5 _overtime_labor_for_plant_a_in_p1
+ - 16.5 _overtime_labor_for_plant_a_in_p2
+ - 17.325 _overtime_labor_for_plant_a_in_p3
+ - 17.325 _overtime_labor_for_plant_a_in_p4
+ - 17.325 _overtime_labor_for_plant_a_in_p5
+ - 16.5 _overtime_labor_for_plant_b_in_p1
+ - 16.5 _overtime_labor_for_plant_b_in_p2
+ - 18.15 _overtime_labor_for_plant_b_in_p3
+ - 18.15 _overtime_labor_for_plant_b_in_p4
+ - 18.15 _overtime_labor_for_plant_b_in_p5
  - 160 _widgets_advertising_investment_p1
  - 160 _widgets_advertising_investment_p2
  - 160 _widgets_advertising_investment_p3
  - 160 _widgets_advertising_investment_p4
- + 2480.5 _widgets_contracted_demand_in_p1
- + 2480.5 _widgets_contracted_demand_in_p2
- + 2480.5 _widgets_contracted_demand_in_p3
- + 2480.5 _widgets_contracted_demand_in_p4
- + 2480.5 _widgets_contracted_demand_in_p5
- + 2480.5 _widgets_demand_from_ads_p2 + 2480.5 _widgets_demand_from_ads_p3
- + 2480.5 _widgets_demand_from_ads_p4 + 2480.5 _widgets_demand_from_ads_p5
+ + 2490 _widgets_contracted_demand_in_p1
+ + 2490 _widgets_contracted_demand_in_p2
+ + 2490 _widgets_contracted_demand_in_p3
+ + 2490 _widgets_contracted_demand_in_p4
+ + 2490 _widgets_contracted_demand_in_p5 + 2490 _widgets_demand_from_ads_p2
+ + 2490 _widgets_demand_from_ads_p3 + 2490 _widgets_demand_from_ads_p4
+ + 2490 _widgets_demand_from_ads_p5
 Subject To
 Advertising_Budget: _flugels_advertising_investment_p1
  + _flugels_advertising_investment_p2 + _flugels_advertising_investment_p3
