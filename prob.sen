@@ -1,0 +1,769 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Factory_A,_Time_1___Labor_met_by_standard_and_overtime
+                    BS    1162.00000    1338.00000          -Inf      779.91209      -3.13579   7.72671e+06 factoryB_widgets_1
+                                            .         2500.00000     2716.00000      19.28153   7.75276e+06 factoryA_flugels_1
+
+     2 Factory_A,_Time_2___Labor_met_by_standard_and_overtime
+                    BS        .         2500.00000          -Inf           -Inf      -5.50000   7.73035e+06 overtime_factoryA_2
+                                            .         2500.00000     1187.50000        .98150   7.73035e+06 factoryA_widgets_2
+
+     3 Factory_A,_Time_3___Labor_met_by_standard_and_overtime
+                    BS    1433.31535    1066.68465          -Inf      473.24074       -.03974   7.73029e+06 storage_factoryA_gadgets_3
+                                            .         2500.00000     1757.50000        .        7.73035e+06 Raw_Material_2_Limits___time_3
+
+     4 Factory_A,_Time_4___Labor_met_by_standard_and_overtime
+                    BS     844.92539    1655.07461          -Inf      520.74074        .        7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .         2500.00000     1805.00000        .        7.73035e+06 factoryB_widgets_5
+
+     5 Factory_A,_Time_5___Labor_met_by_standard_and_overtime
+                    BS    1900.00000     600.00000          -Inf      939.92539        .        7.73035e+06 factoryB_widgets_5
+                                            .         2500.00000     2640.42146      23.76997   7.77551e+06 factoryA_flugels_5
+
+     6 Factory_A_Storage_limit___time_1
+                    NU      70.00000        .               -Inf       66.12154   -3139.83500   7.71817e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+                                        3139.83500      70.00000       71.56379          +Inf   7.73526e+06 Factory_A_Storage_limit___time_2
+
+     7 Factory_A_Storage_limit___time_2
+                    BS      68.43621       1.56379          -Inf       18.43621       -.20000   7.73034e+06 storage_factoryB_gadgets_2
+                                            .           70.00000       68.43621       6.50000    7.7308e+06 storage_factoryA_flugels_2
+
+     8 Factory_A_Storage_limit___time_3
+                    BS        .           70.00000          -Inf         .               -Inf   7.73035e+06
+                                            .           70.00000        6.93699       5.50000   7.73035e+06 storage_factoryA_gadgets_3
+
+     9 Factory_A_Storage_limit___time_4
+                    BS        .           70.00000          -Inf         .               -Inf   7.73035e+06
+                                            .           70.00000         .            5.50000   7.73035e+06 storage_factoryA_gadgets_4
+
+    10 Factory_A_Storage_limit___time_5
+                    BS        .           70.00000          -Inf         .               -Inf   7.73035e+06
+                                            .           70.00000         .               +Inf   7.73035e+06
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Factory_B,_Time_1___Labor_met_by_standard_and_overtime
+                    BS    3434.00000     366.00000          -Inf           -Inf      -5.50000   7.71146e+06 overtime_factoryB_1
+                                            .         3800.00000     4071.00000       3.27363   7.74159e+06 factoryB_widgets_1
+
+    12 Factory_B,_Time_2___Labor_met_by_standard_and_overtime
+                    NU    3800.00000        .               -Inf           -Inf      -5.50000          -Inf
+                                           5.50000    3800.00000     6854.00617          +Inf   7.74715e+06 overtime_factoryB_2
+
+    13 Factory_B,_Time_3___Labor_met_by_standard_and_overtime
+                    NU    3800.00000        .               -Inf           -Inf      -6.05000          -Inf
+                                           6.05000    3800.00000     5403.50702          +Inf   7.74005e+06 overtime_factoryB_3
+
+    14 Factory_B,_Time_4___Labor_met_by_standard_and_overtime
+                    NU    3800.00000        .               -Inf           -Inf      -6.05000          -Inf
+                                           6.05000    3800.00000     5862.33539          +Inf   7.74283e+06 overtime_factoryB_4
+
+    15 Factory_B,_Time_5___Labor_met_by_standard_and_overtime
+                    NU    3800.00000        .               -Inf           -Inf      -6.05000          -Inf
+                                           6.05000    3800.00000     4815.05882          +Inf   7.73649e+06 overtime_factoryB_5
+
+    16 Factory_B_Storage_limit___time_1
+                    NU      50.00000        .               -Inf       46.12154   -3405.69500   7.71714e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+                                        3405.69500      50.00000       51.56379          +Inf   7.73568e+06 Factory_A_Storage_limit___time_2
+
+    17 Factory_B_Storage_limit___time_2
+                    BS        .           50.00000          -Inf         .               -Inf   7.73035e+06
+                                            .           50.00000       68.43621        .20000   7.73035e+06 storage_factoryB_gadgets_2
+
+    18 Factory_B_Storage_limit___time_3
+                    BS        .           50.00000          -Inf         .               -Inf   7.73035e+06
+                                            .           50.00000        6.93699       5.70000   7.73035e+06 storage_factoryB_gadgets_3
+
+    19 Factory_B_Storage_limit___time_4
+                    BS        .           50.00000          -Inf         .               -Inf   7.73035e+06
+                                            .           50.00000       19.68724       5.70000   7.73035e+06 storage_factoryB_gadgets_4
+
+    20 Factory_B_Storage_limit___time_5
+                    BS        .           50.00000          -Inf         .               -Inf   7.73035e+06
+                                            .           50.00000         .               +Inf   7.73035e+06
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 Inflows_Balanced_for_Factory_A___flugels___time_1
+                    BS        .             .             .           -10.35638    -531.02833   7.73035e+06 storage_factoryA_flugels_1
+                                            .               +Inf      120.54054     214.02500   7.73035e+06 factoryA_flugels_1
+
+    22 Inflows_Balanced_for_Factory_A___flugels___time_2
+                    BS        .             .             .            -1.56379      -6.50000   7.73035e+06 storage_factoryA_flugels_2
+                                            .               +Inf       54.54085     276.37679   7.73035e+06 factoryA_flugels_2
+
+    23 Inflows_Balanced_for_Factory_A___flugels___time_3
+                    BS        .             .             .           -70.00000      -6.50000   7.73035e+06 storage_factoryA_flugels_3
+                                            .               +Inf         .            6.50000   7.73035e+06 storage_factoryA_flugels_2
+
+    24 Inflows_Balanced_for_Factory_A___flugels___time_4
+                    BS        .             .             .           -51.00802      -6.50000   7.73035e+06 storage_factoryA_flugels_4
+                                            .               +Inf         .            6.50000   7.73035e+06 storage_factoryA_flugels_3
+
+    25 Inflows_Balanced_for_Factory_A___flugels___time_5
+                    BS        .             .             .              .               -Inf   7.73035e+06
+                                            .               +Inf         .            6.50000   7.73035e+06 storage_factoryA_flugels_4
+
+    26 Inflows_Balanced_for_Factory_A___gadgets___time_1
+                    NL        .             .             .           -46.92308          -Inf   7.74284e+06 Factory_B,_Time_1___Labor_met_by_standard_and_overtime
+                                        -266.06000          +Inf      188.45070     266.06000   7.68021e+06 Factory_A,_Time_1___Labor_met_by_standard_and_overtime
+
+    27 Inflows_Balanced_for_Factory_A___gadgets___time_2
+                    BS       1.56379      -1.56379        .              .          -15.77853   7.73033e+06 Raw_Material_2_Limits___time_2
+                                            .               +Inf       51.56379        .20000   7.73035e+06 storage_factoryB_gadgets_2
+
+    28 Inflows_Balanced_for_Factory_A___gadgets___time_3
+                    BS      68.43621     -68.43621        .            18.43621       -.20000   7.73034e+06 storage_factoryB_gadgets_2
+                                            .               +Inf       70.00000      15.77853   7.73143e+06 Raw_Material_2_Limits___time_2
+
+    29 Inflows_Balanced_for_Factory_A___gadgets___time_4
+                    BS        .             .             .           -19.68724      -5.50000   7.73035e+06 storage_factoryA_gadgets_4
+                                            .               +Inf        6.93699       5.50000   7.73035e+06 storage_factoryA_gadgets_3
+
+    30 Inflows_Balanced_for_Factory_A___gadgets___time_5
+                    BS        .             .             .              .               -Inf   7.73035e+06
+                                            .               +Inf         .            5.50000   7.73035e+06 storage_factoryA_gadgets_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 Inflows_Balanced_for_Factory_A___widgets___time_1
+                    BS      70.00000     -70.00000        .            29.78022     -29.79000   7.72827e+06 factoryB_widgets_1
+                                            .               +Inf       70.00000     508.93489   7.76598e+06 storage_factoryB_widgets_1
+
+    32 Inflows_Balanced_for_Factory_A___widgets___time_2
+                    BS        .             .             .            -1.93522      -8.79844   7.73035e+06 storage_factoryA_widgets_2
+                                            .               +Inf      125.00000       9.32422   7.73035e+06 factoryA_widgets_2
+
+    33 Inflows_Balanced_for_Factory_A___widgets___time_3
+                    BS     150.87530    -150.87530        .            49.81481       -.37753   7.73029e+06 storage_factoryA_gadgets_3
+                                            .               +Inf      185.00000        .        7.73035e+06 Raw_Material_2_Limits___time_3
+
+    34 Inflows_Balanced_for_Factory_A___widgets___time_4
+                    BS      88.93952     -88.93952        .            54.81481        .        7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf      190.00000        .        7.73035e+06 factoryB_widgets_5
+
+    35 Inflows_Balanced_for_Factory_A___widgets___time_5
+                    BS     200.00000    -200.00000        .            98.93952        .        7.73035e+06 factoryB_widgets_5
+                                            .               +Inf      212.44232     956.35463   7.92162e+06 marketing_widgets_4
+
+    36 Inflows_Balanced_for_Factory_B___flugels___time_1
+                    BS     140.00000    -140.00000        .            19.45946    -214.02500   7.70039e+06 factoryA_flugels_1
+                                            .               +Inf      140.00000     531.02833    7.8047e+06 storage_factoryA_flugels_1
+
+    37 Inflows_Balanced_for_Factory_B___flugels___time_2
+                    BS     356.48148    -356.48148        .           306.48148      -7.00000   7.72786e+06 storage_factoryB_flugels_2
+                                            .               +Inf      363.42593     167.83604   7.79018e+06 factoryA_widgets_2
+
+    38 Inflows_Balanced_for_Factory_B___flugels___time_3
+                    BS     313.75233    -313.75233        .           312.54793        .        7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf      363.75233       7.00000   7.73255e+06 storage_factoryB_flugels_2
+
+    39 Inflows_Balanced_for_Factory_B___flugels___time_4
+                    BS     286.00802    -286.00802        .           282.44118        .        7.73035e+06 factoryB_widgets_5
+                                            .               +Inf      287.21242        .        7.73035e+06 Raw_Material_2_Limits___time_3
+
+    40 Inflows_Balanced_for_Factory_B___flugels___time_5
+                    BS     277.64706    -277.64706        .           221.04928    -251.98839   7.66039e+06 factoryA_flugels_5
+                                            .               +Inf      281.21390        .        7.73035e+06 factoryB_widgets_5
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 Inflows_Balanced_for_Factory_B___gadgets___time_1
+                    BS     200.00000    -200.00000        .            11.54930    -266.06000   7.67714e+06 Inflows_Balanced_for_Factory_A___gadgets___time_1
+                                            .               +Inf      200.00000          +Inf          +Inf
+
+    42 Inflows_Balanced_for_Factory_B___gadgets___time_2
+                    BS     298.43621    -298.43621        .           248.43621       -.20000   7.73029e+06 storage_factoryB_gadgets_2
+                                            .               +Inf      300.00000      15.77853   7.73506e+06 Raw_Material_2_Limits___time_2
+
+    43 Inflows_Balanced_for_Factory_B___gadgets___time_3
+                    BS     226.56379    -226.56379        .           225.00000     -15.77853   7.72678e+06 Raw_Material_2_Limits___time_2
+                                            .               +Inf      276.56379        .20000    7.7304e+06 storage_factoryB_gadgets_2
+
+    44 Inflows_Balanced_for_Factory_B___gadgets___time_4
+                    BS     245.00000    -245.00000        .           238.06301      -5.50000     7.729e+06 storage_factoryA_gadgets_3
+                                            .               +Inf      245.00000       5.50000    7.7317e+06 storage_factoryA_gadgets_4
+
+    45 Inflows_Balanced_for_Factory_B___gadgets___time_5
+                    BS     240.00000    -240.00000        .           240.00000      -5.50000   7.72903e+06 storage_factoryA_gadgets_4
+                                            .               +Inf      244.77884    1656.28722   8.12786e+06 marketing_gadgets_4
+
+    46 Inflows_Balanced_for_Factory_B___widgets___time_1
+                    BS        .             .             .           -12.81626    -508.93489   7.73035e+06 storage_factoryB_widgets_1
+                                            .               +Inf       40.21978      29.79000   7.73035e+06 factoryB_widgets_1
+
+    47 Inflows_Balanced_for_Factory_B___widgets___time_2
+                    BS     125.00000    -125.00000        .              .           -9.32422   7.72919e+06 factoryA_widgets_2
+                                            .               +Inf      125.00000       8.79844   7.73145e+06 storage_factoryA_widgets_2
+
+    48 Inflows_Balanced_for_Factory_B___widgets___time_3
+                    BS      34.12470     -34.12470        .              .             .        7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf      135.18519        .37753   7.73036e+06 storage_factoryA_gadgets_3
+
+    49 Inflows_Balanced_for_Factory_B___widgets___time_4
+                    BS     101.06048    -101.06048        .              .             .        7.73035e+06 factoryB_widgets_5
+                                            .               +Inf      135.18519        .        7.73035e+06 Raw_Material_2_Limits___time_3
+
+    50 Inflows_Balanced_for_Factory_B___widgets___time_5
+                    BS        .             .             .              .               -Inf   7.73035e+06
+                                            .               +Inf      101.06048        .        7.73035e+06 factoryB_widgets_5
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   6
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 Inflows_and_Outflows_of_Production_Equal___flugels___time_1
+                    NS     140.00000        .          140.00000         .               -Inf   7.33791e+06 Inflows_Balanced_for_Factory_B___flugels___time_1
+                                        2803.18500     140.00000      174.52830          +Inf   7.82714e+06 Factory_B,_Time_1___Labor_met_by_standard_and_overtime
+
+    52 Inflows_and_Outflows_of_Production_Equal___flugels___time_2
+                    NS     175.00000        .          175.00000      171.43316          -Inf   7.72968e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                         187.87833     175.00000      178.13904          +Inf   7.73094e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    53 Inflows_and_Outflows_of_Production_Equal___flugels___time_3
+                    NS     205.00000        .          205.00000      201.43316          -Inf   7.72968e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                         187.87833     205.00000      208.13904          +Inf   7.73094e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    54 Inflows_and_Outflows_of_Production_Equal___flugels___time_4
+                    NS     235.00000        .          235.00000      231.43316          -Inf   7.72968e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                         187.87833     235.00000      238.13904          +Inf   7.73094e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    55 Inflows_and_Outflows_of_Production_Equal___flugels___time_5
+                    NS     230.00000        .          230.00000      226.43316          -Inf   7.72968e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                         187.87833     230.00000      233.13904          +Inf   7.73094e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    56 Inflows_and_Outflows_of_Production_Equal___gadgets___time_1
+                    NS     200.00000        .          200.00000         .               -Inf   7.35318e+06 Inflows_Balanced_for_Factory_B___gadgets___time_1
+                                        1885.86000     200.00000      246.92308          +Inf   7.81884e+06 Factory_B,_Time_1___Labor_met_by_standard_and_overtime
+
+    57 Inflows_and_Outflows_of_Production_Equal___gadgets___time_2
+                    NS     300.00000        .          300.00000      298.43621          -Inf   7.73274e+06 Factory_A_Storage_limit___time_2
+                                       -1525.53500     300.00000      303.87846          +Inf   7.72443e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    58 Inflows_and_Outflows_of_Production_Equal___gadgets___time_3
+                    NS     295.00000        .          295.00000      292.65761          -Inf   7.73394e+06 Inflows_Balanced_for_Factory_B___widgets___time_3
+                                       -1531.03500     295.00000      298.87846          +Inf   7.72441e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    59 Inflows_and_Outflows_of_Production_Equal___gadgets___time_4
+                    NS     245.00000        .          245.00000      242.30505          -Inf   7.73448e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                       -1531.03500     245.00000      247.37172          +Inf   7.72672e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    60 Inflows_and_Outflows_of_Production_Equal___gadgets___time_5
+                    NS     240.00000        .          240.00000      237.30505          -Inf   7.73448e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                       -1531.03500     240.00000      242.37172          +Inf   7.72672e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   7
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    61 Inflows_and_Outflows_of_Production_Equal___widgets___time_1
+                    NS      70.00000        .           70.00000         .               -Inf   7.58238e+06 Inflows_Balanced_for_Factory_A___widgets___time_1
+                                        2113.91000      70.00000      210.84211          +Inf   8.02808e+06 Factory_A,_Time_1___Labor_met_by_standard_and_overtime
+
+    62 Inflows_and_Outflows_of_Production_Equal___widgets___time_2
+                    NS     125.00000        .          125.00000      121.45864          -Inf   7.73315e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -790.65011     125.00000      128.11662          +Inf   7.72789e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    63 Inflows_and_Outflows_of_Production_Equal___widgets___time_3
+                    NS     185.00000        .          185.00000      181.45864          -Inf   7.73315e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -789.35167     185.00000      188.11662          +Inf   7.72789e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    64 Inflows_and_Outflows_of_Production_Equal___widgets___time_4
+                    NS     190.00000        .          190.00000      186.87442          -Inf   7.73282e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -789.35167     190.00000      192.83850          +Inf   7.72811e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    65 Inflows_and_Outflows_of_Production_Equal___widgets___time_5
+                    NS     200.00000        .          200.00000      196.87442          -Inf   7.73282e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -789.35167     200.00000      202.75071          +Inf   7.72818e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    66 Marketing_Budget
+                    NU   70000.00000        .               -Inf    69357.96868       -.04377   7.73032e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                            .04377   70000.00000    70565.02751          +Inf   7.73038e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    67 Raw_Material_1_Limits___time_1
+                    BS  109730.00000   30270.00000          -Inf   109488.68132      -4.96500   7.18554e+06 factoryB_widgets_1
+                                            .       140000.00000   110694.32432      26.75313    1.0666e+07 factoryA_flugels_1
+
+    68 Raw_Material_1_Limits___time_2
+                    NU  140000.00000        .               -Inf   139127.34641     -14.97109   7.71729e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+                                          14.97109  140000.00000   140351.85185          +Inf   7.73562e+06 Factory_A_Storage_limit___time_2
+
+    69 Raw_Material_1_Limits___time_3
+                    NU  140000.00000        .               -Inf   139127.34641     -14.93833   7.71732e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+                                          14.93833  140000.00000   140527.03704          +Inf   7.73822e+06 Inflows_Balanced_for_Factory_B___widgets___time_3
+
+    70 Raw_Material_1_Limits___time_4
+                    NU  140000.00000        .               -Inf   139466.36291     -14.93833   7.72238e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+                                          14.93833  140000.00000   140606.36291          +Inf   7.73941e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   8
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    71 Raw_Material_1_Limits___time_5
+                    NU  140000.00000        .               -Inf   139466.36291     -14.93833   7.72238e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+                                          14.93833  140000.00000   140606.36291          +Inf   7.73941e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+    72 Raw_Material_2_Limits___time_1
+                    BS    2114.00000    2886.00000          -Inf     2114.00000          -Inf          -Inf
+                                            .         5000.00000     2184.06861      28.22964   7.79003e+06 storage_factoryA_widgets_1
+
+    73 Raw_Material_2_Limits___time_2
+                    NU    5000.00000        .               -Inf     4977.64706      -1.10385   7.73033e+06 Factory_A_Storage_limit___time_2
+                                           1.10385    5000.00000     5099.15817          +Inf   7.73046e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+    74 Raw_Material_2_Limits___time_3
+                    NU    5000.00000        .               -Inf     4966.51765        .        7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_3
+                                            .         5000.00000     5099.15817          +Inf   7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+    75 Raw_Material_2_Limits___time_4
+                    BS    4783.52288     216.47712          -Inf     4684.36471        .        7.73035e+06 factoryB_widgets_5
+                                            .         5000.00000     4817.00523        .        7.73035e+06 Raw_Material_2_Limits___time_3
+
+    76 Raw_Material_2_Limits___time_5
+                    BS    4718.58824     281.41176          -Inf     4650.27894    -115.87195    7.1836e+06 marketing_gadgets_4
+                                            .         5000.00000     4817.74641        .        7.73035e+06 factoryB_widgets_5
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   9
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 factoryA_flugels_1
+                    NL        .         2589.16000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_1
+                                        -214.02500          +Inf      120.54054    2803.18500   7.70455e+06 Factory_A,_Time_1___Labor_met_by_standard_and_overtime
+
+     2 factoryA_flugels_2
+                    NL        .         2589.16000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_2
+                                        -276.37679          +Inf       54.54085    2865.53679   7.71528e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+     3 factoryA_flugels_3
+                    NL        .         2583.05500        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_3
+                                        -263.84667          +Inf       54.54085    2846.90167   7.71596e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+     4 factoryA_flugels_4
+                    NL        .         2583.05500        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_4
+                                        -263.84667          +Inf       66.70464    2846.90167   7.71275e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+     5 factoryA_flugels_5
+                    NL        .         2583.05500        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_5
+                                        -263.84667          +Inf       54.05405    2846.90167   7.71609e+06 Factory_A,_Time_5___Labor_met_by_standard_and_overtime
+
+     6 factoryA_gadgets_1
+                    BS      70.00000    1619.80000        .            61.85249    1377.02511   7.71336e+06 storage_factoryA_widgets_1
+                                            .               +Inf      258.45070    1885.86000   7.74898e+06 Inflows_Balanced_for_Factory_A___gadgets___time_1
+
+     7 factoryA_gadgets_2
+                    NL        .         1619.80000        .            -1.52979          -Inf   7.73081e+06 Inflows_Balanced_for_Factory_A___gadgets___time_2
+                                        -298.01544          +Inf      174.53072    1917.81544   7.67834e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+     8 factoryA_gadgets_3
+                    NL        .         1615.89500        .           -68.43621          -Inf   7.75012e+06 Inflows_Balanced_for_Factory_A___gadgets___time_3
+                                        -288.88667          +Inf      174.53072    1904.78167   7.67993e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+     9 factoryA_gadgets_4
+                    NL        .         1615.89500        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___gadgets___time_4
+                                        -288.88667          +Inf      106.72742    1904.78167   7.69952e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    10 factoryA_gadgets_5
+                    NL        .         1615.89500        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___gadgets___time_5
+                                        -288.88667          +Inf       84.50704    1904.78167   7.70594e+06 Factory_A,_Time_5___Labor_met_by_standard_and_overtime
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  10
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 factoryA_widgets_1
+                    BS      70.00000    2113.91000        .            29.78022    2084.12000   7.72827e+06 factoryB_widgets_1
+                                            .               +Inf       78.14751    2356.68489   7.74735e+06 storage_factoryA_widgets_1
+
+    12 factoryA_widgets_2
+                    NL        .         2113.91000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___widgets___time_2
+                                          -9.32422          +Inf      125.00000    2123.23422   7.72919e+06 Inflows_Balanced_for_Factory_B___widgets___time_2
+
+    13 factoryA_widgets_3
+                    BS     150.87530    2108.68500        .            49.81481    2108.30747   7.73029e+06 storage_factoryA_gadgets_3
+                                            .               +Inf      185.00000    2108.68500   7.73035e+06 Raw_Material_2_Limits___time_3
+
+    14 factoryA_widgets_4
+                    BS      88.93952    2108.68500        .            54.81481    2108.68500   7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf      190.00000    2108.68500   7.73035e+06 factoryB_widgets_5
+
+    15 factoryA_widgets_5
+                    BS     200.00000    2108.68500        .            98.93952    2108.68500   7.73035e+06 factoryB_widgets_5
+                                            .               +Inf      212.44232    3065.03963   7.92162e+06 marketing_widgets_4
+
+    16 factoryB_flugels_1
+                    BS     140.00000    2803.18500        .            19.45946    2589.16000   7.70039e+06 factoryA_flugels_1
+                                            .               +Inf      140.00000    3334.21333    7.8047e+06 storage_factoryA_flugels_1
+
+    17 factoryB_flugels_2
+                    BS     356.48148    2803.18500        .           356.48148    2792.85639   7.72667e+06 storage_factoryA_widgets_2
+                                            .               +Inf      363.42593    2971.02104   7.79018e+06 factoryA_widgets_2
+
+    18 factoryB_flugels_3
+                    BS     313.75233    2791.52500        .           312.54793    2791.52500   7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf      313.75233    2801.85361   7.73359e+06 storage_factoryA_widgets_2
+
+    19 factoryB_flugels_4
+                    BS     286.00802    2791.52500        .           282.44118    2791.52500   7.73035e+06 factoryB_widgets_5
+                                            .               +Inf      287.21242    2791.52500   7.73035e+06 Raw_Material_2_Limits___time_3
+
+    20 factoryB_flugels_5
+                    BS     277.64706    2791.52500        .           221.04928    2539.53661   7.66039e+06 factoryA_flugels_5
+                                            .               +Inf      281.21390    2791.52500   7.73035e+06 factoryB_widgets_5
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  11
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 factoryB_gadgets_1
+                    BS     250.00000    1885.86000        .            61.54930    1619.80000   7.66384e+06 Inflows_Balanced_for_Factory_A___gadgets___time_1
+                                            .               +Inf      250.00000          +Inf          +Inf
+
+    22 factoryB_gadgets_2
+                    BS     248.43621    1885.86000        .           248.43621    1840.01905   7.71896e+06 storage_factoryA_widgets_2
+                                            .               +Inf      250.00000    1901.63853   7.73427e+06 Raw_Material_2_Limits___time_2
+
+    23 factoryB_gadgets_3
+                    BS     226.56379    1877.28000        .           225.00000    1861.50147   7.72678e+06 Raw_Material_2_Limits___time_2
+                                            .               +Inf      233.50078    1882.78000    7.7316e+06 storage_factoryA_gadgets_3
+
+    24 factoryB_gadgets_4
+                    BS     245.00000    1877.28000        .           238.06301    1871.78000     7.729e+06 storage_factoryA_gadgets_3
+                                            .               +Inf      245.00000    1882.78000    7.7317e+06 storage_factoryA_gadgets_4
+
+    25 factoryB_gadgets_5
+                    BS     240.00000    1877.28000        .           240.00000    1871.78000   7.72903e+06 storage_factoryA_gadgets_4
+                                            .               +Inf      244.77884    3533.56722   8.12786e+06 marketing_gadgets_4
+
+    26 factoryB_widgets_1
+                    NL        .         2084.12000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_1
+                                         -29.79000          +Inf       40.21978    2113.91000   7.72915e+06 Factory_B,_Time_1___Labor_met_by_standard_and_overtime
+
+    27 factoryB_widgets_2
+                    BS     125.00000    2084.12000        .              .         2074.79578   7.72919e+06 factoryA_widgets_2
+                                            .               +Inf      125.00000    2092.91844   7.73145e+06 storage_factoryA_widgets_2
+
+    28 factoryB_widgets_3
+                    BS      34.12470    2074.11000        .              .         2074.11000   7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf      135.18519    2074.48753   7.73036e+06 storage_factoryA_gadgets_3
+
+    29 factoryB_widgets_4
+                    BS     101.06048    2074.11000        .              .         2074.11000   7.73035e+06 factoryB_widgets_5
+                                            .               +Inf      135.18519    2074.11000   7.73035e+06 Raw_Material_2_Limits___time_3
+
+    30 factoryB_widgets_5
+                    NL        .         2074.11000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_5
+                                            .               +Inf      101.06048    2074.11000   7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  12
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 marketing_flugels_1
+                    BS     181.48148    -180.00000        .           181.48148    -186.50000   7.72917e+06 storage_factoryA_flugels_2
+                                            .               +Inf      188.42593     -12.16396   7.76081e+06 factoryA_widgets_2
+
+    32 marketing_flugels_2
+                    BS     108.75233    -180.00000        .           107.54793    -180.00000   7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf      108.75233    -173.50000   7.73106e+06 storage_factoryA_flugels_2
+
+    33 marketing_flugels_3
+                    BS      51.00802    -180.00000        .            47.44118    -180.00000   7.73035e+06 factoryB_widgets_5
+                                            .               +Inf       52.21242    -180.00000   7.73035e+06 Raw_Material_2_Limits___time_3
+
+    34 marketing_flugels_4
+                    BS      47.64706    -180.00000        .            33.44818   -1018.04272   7.69042e+06 marketing_widgets_4
+                                            .               +Inf       51.21390    -180.00000   7.73035e+06 factoryB_widgets_5
+
+    35 marketing_gadgets_1
+                    NL        .         -120.00000        .            -1.56379          -Inf   7.73293e+06 Factory_A_Storage_limit___time_2
+                                       -1650.78722          +Inf       10.35638    1530.78722   7.71326e+06 Inflows_Balanced_for_Factory_A___widgets___time_3
+
+    36 marketing_gadgets_2
+                    NL        .         -120.00000        .            -2.34239          -Inf   7.73423e+06 Inflows_Balanced_for_Factory_B___widgets___time_3
+                                       -1656.28722          +Inf       10.35638    1536.28722    7.7132e+06 Inflows_Balanced_for_Factory_A___widgets___time_3
+
+    37 marketing_gadgets_3
+                    NL        .         -120.00000        .            -5.43012          -Inf   7.73935e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                       -1656.28722          +Inf        4.77884    1536.28722   7.72244e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    38 marketing_gadgets_4
+                    NL        .         -120.00000        .            -5.43012          -Inf   7.73935e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                       -1656.28722          +Inf        4.77884    1536.28722   7.72244e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    39 marketing_widgets_1
+                    NL        .         -160.00000        .            -8.14751          -Inf   7.73815e+06 Factory_A_Storage_limit___time_2
+                                        -957.65307          +Inf       26.53339     797.65307   7.70494e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    40 marketing_widgets_2
+                    NL        .         -160.00000        .            -8.98926          -Inf   7.73895e+06 Inflows_Balanced_for_Factory_B___widgets___time_3
+                                        -956.35463          +Inf       26.53339     796.35463   7.70498e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  13
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 marketing_widgets_3
+                    NL        .         -160.00000        .           -14.13800          -Inf   7.74387e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -956.35463          +Inf       14.46607     796.35463   7.71652e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    42 marketing_widgets_4
+                    NL        .         -160.00000        .           -14.13800          -Inf   7.74387e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -956.35463          +Inf       12.44232     796.35463   7.71845e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    43 overtime_factoryA_1
+                    NL        .           -5.50000        .         -1338.00000          -Inf   7.73771e+06 Factory_A,_Time_1___Labor_met_by_standard_and_overtime
+                                          -5.50000          +Inf           +Inf        .               -Inf
+
+    44 overtime_factoryA_2
+                    NL        .           -5.50000        .         -2500.00000          -Inf    7.7441e+06 Factory_A,_Time_2___Labor_met_by_standard_and_overtime
+                                          -5.50000          +Inf           +Inf        .               -Inf
+
+    45 overtime_factoryA_3
+                    NL        .           -5.77500        .         -1066.68465          -Inf   7.73651e+06 Factory_A,_Time_3___Labor_met_by_standard_and_overtime
+                                          -5.77500          +Inf           +Inf        .               -Inf
+
+    46 overtime_factoryA_4
+                    NL        .           -5.77500        .         -1655.07461          -Inf   7.73991e+06 Factory_A,_Time_4___Labor_met_by_standard_and_overtime
+                                          -5.77500          +Inf           +Inf        .               -Inf
+
+    47 overtime_factoryA_5
+                    NL        .           -5.77500        .          -600.00000          -Inf   7.73382e+06 Factory_A,_Time_5___Labor_met_by_standard_and_overtime
+                                          -5.77500          +Inf           +Inf        .               -Inf
+
+    48 overtime_factoryB_1
+                    NL        .           -5.50000        .          -366.00000          -Inf   7.73236e+06 Factory_B,_Time_1___Labor_met_by_standard_and_overtime
+                                          -5.50000          +Inf           +Inf        .               -Inf
+
+    49 overtime_factoryB_2
+                    BS    3054.00617      -5.50000        .          1923.19136      -6.53070    7.7272e+06 factoryA_widgets_2
+                                            .               +Inf           +Inf        .        7.74715e+06 Factory_B,_Time_2___Labor_met_by_standard_and_overtime
+
+    50 overtime_factoryB_3
+                    BS    1603.50702      -6.05000        .          1280.20559      -6.05000   7.73035e+06 Raw_Material_2_Limits___time_3
+                                            .               +Inf     2517.75257      -6.00827   7.73042e+06 storage_factoryA_gadgets_3
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  14
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 overtime_factoryB_4
+                    BS    2062.33539      -6.05000        .          1104.87647      -6.05000   7.73035e+06 factoryB_widgets_5
+                                            .               +Inf     2385.63682      -6.05000   7.73035e+06 Raw_Material_2_Limits___time_3
+
+    52 overtime_factoryB_5
+                    BS    1015.05882      -6.05000        .           415.12242     -29.82249   7.70622e+06 factoryA_flugels_5
+                                            .               +Inf     1972.51775      -6.05000   7.73035e+06 factoryB_widgets_5
+
+    53 storage_factoryA_flugels_1
+                    NL        .           -6.50000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_2
+                                        -531.02833          +Inf         .          524.52833   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_1
+
+    54 storage_factoryA_flugels_2
+                    NL        .           -6.50000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_3
+                                          -6.50000          +Inf         .             .        7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_2
+
+    55 storage_factoryA_flugels_3
+                    NL        .           -6.50000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_4
+                                          -6.50000          +Inf         .             .        7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_3
+
+    56 storage_factoryA_flugels_4
+                    NL        .           -6.50000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_5
+                                          -6.50000          +Inf         .             .        7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_4
+
+    57 storage_factoryA_flugels_5
+                    NS        .           -6.50000        .            -3.56684          -Inf    7.7297e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                         181.37833        .              .               +Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___flugels___time_5
+
+    58 storage_factoryA_gadgets_1
+                    BS      70.00000      -5.50000        .            61.85249    -248.27489   7.71336e+06 storage_factoryA_widgets_1
+                                            .               +Inf       70.00000          +Inf          +Inf
+
+    59 storage_factoryA_gadgets_2
+                    BS      68.43621      -5.50000        .            18.43621      -5.70000   7.73034e+06 storage_factoryB_gadgets_2
+                                            .               +Inf       70.00000      10.27853   7.73143e+06 Raw_Material_2_Limits___time_2
+
+    60 storage_factoryA_gadgets_3
+                    NL        .           -5.50000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___gadgets___time_4
+                                          -5.50000          +Inf        6.93699        .        7.73031e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  15
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    61 storage_factoryA_gadgets_4
+                    NL        .           -5.50000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___gadgets___time_5
+                                          -5.50000          +Inf         .             .        7.73035e+06 Inflows_Balanced_for_Factory_A___gadgets___time_4
+
+    62 storage_factoryA_gadgets_5
+                    NS        .           -5.50000        .            -2.69495          -Inf   7.73449e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                       -1536.53500        .              .               +Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___gadgets___time_5
+
+    63 storage_factoryA_widgets_1
+                    NL        .           -7.50000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_A___widgets___time_2
+                                        -242.77489          +Inf        8.14751     235.27489   7.72837e+06 Inflows_Balanced_for_Factory_A___gadgets___time_2
+
+    64 storage_factoryA_widgets_2
+                    NL        .           -7.50000        .            -8.14751          -Inf   7.73042e+06 Inflows_Balanced_for_Factory_A___gadgets___time_2
+                                          -8.79844          +Inf         .            1.29844   7.73035e+06 Inflows_Balanced_for_Factory_A___widgets___time_2
+
+    65 storage_factoryA_widgets_3
+                    NL        .           -7.50000        .            -8.98926          -Inf   7.73042e+06 Inflows_Balanced_for_Factory_B___widgets___time_3
+                                          -7.50000          +Inf       26.62174        .        7.73015e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+    66 storage_factoryA_widgets_4
+                    NL        .           -7.50000        .           -41.75258          -Inf   7.73066e+06 marketing_flugels_4
+                                          -7.50000          +Inf       44.69775        .        7.73002e+06 marketing_flugels_3
+
+    67 storage_factoryA_widgets_5
+                    NS        .           -7.50000        .            -3.12558          -Inf   7.73284e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -796.85167        .             2.75071          +Inf   7.72816e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    68 storage_factoryB_flugels_1
+                    NL        .           -7.00000        .            -1.56379          -Inf    7.7316e+06 Factory_A_Storage_limit___time_2
+                                        -797.38833          +Inf       10.35638     790.38833   7.72209e+06 Inflows_Balanced_for_Factory_A___widgets___time_3
+
+    69 storage_factoryB_flugels_2
+                    NL        .           -7.00000        .          -108.75233          -Inf   7.73111e+06 marketing_flugels_2
+                                          -7.00000          +Inf       50.00000        .           7.73e+06 Factory_B_Storage_limit___time_2
+
+    70 storage_factoryB_flugels_3
+                    NL        .           -7.00000        .           -51.00802          -Inf   7.73071e+06 marketing_flugels_3
+                                          -7.00000          +Inf       50.00000        .           7.73e+06 Factory_B_Storage_limit___time_3
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  16
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    71 storage_factoryB_flugels_4
+                    NL        .           -7.00000        .           -47.64706          -Inf   7.73068e+06 marketing_flugels_4
+                                          -7.00000          +Inf       50.00000        .           7.73e+06 Factory_B_Storage_limit___time_4
+
+    72 storage_factoryB_flugels_5
+                    NS        .           -7.00000        .            -3.56684          -Inf   7.72971e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                         180.87833        .             3.13904          +Inf   7.73092e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    73 storage_factoryB_gadgets_1
+                    BS      50.00000      -5.70000        .            50.00000    -514.63489    7.7049e+06 storage_factoryB_widgets_1
+                                            .               +Inf       50.00000          +Inf          +Inf
+
+    74 storage_factoryB_gadgets_2
+                    NL        .           -5.70000        .            -1.56379          -Inf   7.73035e+06 Factory_A_Storage_limit___time_2
+                                           -.20000          +Inf       50.00000      -5.50000   7.73034e+06 Factory_B_Storage_limit___time_2
+
+    75 storage_factoryB_gadgets_3
+                    NL        .           -5.70000        .            -2.34239          -Inf   7.73036e+06 Inflows_Balanced_for_Factory_B___widgets___time_3
+                                          -5.70000          +Inf        6.93699        .        7.73031e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+
+    76 storage_factoryB_gadgets_4
+                    NL        .           -5.70000        .           -15.14449          -Inf   7.73044e+06 Raw_Material_2_Limits___time_4
+                                          -5.70000          +Inf       19.68724        .        7.73024e+06 Raw_Material_2_Limits___time_5
+
+    77 storage_factoryB_gadgets_5
+                    NS        .           -5.70000        .            -2.69495          -Inf   7.73449e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                       -1536.73500        .             2.37172          +Inf   7.72671e+06 Inflows_Balanced_for_Factory_A___widgets___time_4
+
+    78 storage_factoryB_widgets_1
+                    NL        .           -7.80000        .            -1.93522          -Inf   7.73134e+06 Factory_A_Storage_limit___time_2
+                                        -508.93489          +Inf         .          501.13489   7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_1
+
+    79 storage_factoryB_widgets_2
+                    NL        .           -7.80000        .            -8.14751          -Inf   7.73043e+06 Factory_A_Storage_limit___time_2
+                                          -9.09844          +Inf       34.12470       1.29844   7.73004e+06 factoryB_widgets_3
+
+    80 storage_factoryB_widgets_3
+                    NL        .           -7.80000        .            -8.98926          -Inf   7.73042e+06 factoryB_widgets_3
+                                          -7.80000          +Inf       26.62174        .        7.73014e+06 factoryB_widgets_4
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page  17
+
+Problem:    
+Objective:  OBJ = 7730351.199 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    81 storage_factoryB_widgets_4
+                    NL        .           -7.80000        .              .               -Inf   7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_5
+                                          -7.80000          +Inf       44.69775        .           7.73e+06 marketing_flugels_3
+
+    82 storage_factoryB_widgets_5
+                    NS        .           -7.80000        .            -3.12558          -Inf   7.73284e+06 Inflows_Balanced_for_Factory_B___widgets___time_4
+                                        -797.15167        .              .               +Inf   7.73035e+06 Inflows_Balanced_for_Factory_B___widgets___time_5
+
+End of report
