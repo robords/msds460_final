@@ -6,3 +6,5 @@ pylint==2.*
 pulp
 GLPK
 scipy
+plotly
+ipywidgets
